@@ -1,0 +1,17 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gamescript.js",
+  "scripts": {
+    "start": "nodemon gamescript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

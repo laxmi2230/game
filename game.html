@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            tic_tac_toe
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="game.css">
+        <script type="text/javascript" src="game.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <button onclick="backMainPage()" id="header_close_icon" style="float: left;margin-left:10px;display: none;" class="fa fa-close">
+            </button>
+        <h3 style="display: inline-block;margin-top: 10px;margin-left: 20px" id="info">Tic-Tac-Toe
+        </h3>
+        <button class="fa fa_user"></button>
+        </div>
+        <div id="gamePlay">
+            <div id="gameBoard"></div>
+            <button onclick="clearBoard()" id="restart">Restart</button>
+        </div>
+        <div id="mainPage" class="main_page">
+            <div class="section">
+                <div style="position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);width: 100%">
+                <div onclick="aiSec()" class="sec ai">
+                <p><span class="fa fa-microchip"></span></p>
+                <p>AI</p>
+                </div>
+                <div onclick="multiL()" class="sec local">
+                <p><span class="fa fa-user"></span></p>
+                <p>Multiplayer Local</p>
+                </div>              
+              </div>
+            </div>
+        </div>
+        <div id="aiLevel" class="levPage">
+            <div class="levels">
+                <div onclick="setLevel('E')" id="easyLevel" class="lev">Easy</div>
+                <div onclick="setLevel('M')" id="mediumLevel" class="lev">Medium</div>
+                <div onclick="setLevel('H')" id="hardLevel" class="lev">Hard</div>
+            </div>
+        </div>
+
+        <div id="result">
+            <p id="data">Match is Draw</p>
+            <button onclick="hide_result()">Ok</button>
+        </div>
+    </body>
+</html>
